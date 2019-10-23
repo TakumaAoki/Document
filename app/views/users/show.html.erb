@@ -17,3 +17,10 @@
   <strong>Country:</strong>
   <%=@user.country%>
 </p>
+
+<% @user.posts.each do |post| %>
+  <div>
+    <strong>Content</strong>
+    <%=post.content%>
+  </div>  
+<% end %>  
